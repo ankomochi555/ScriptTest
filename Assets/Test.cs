@@ -27,8 +27,7 @@ public class Boss
 
     public void Magic(int mpuse)
     {
-        for (int m = 0; m < 11; m++)
-        {
+        
             if (mp >= 5)
             {
                 this.mp -= mpuse;
@@ -37,11 +36,9 @@ public class Boss
             }
             else
             {
-                this.mp -= mpuse;
+                this.mp = mpuse;
                 Debug.Log("MPが足りないため、魔法が使えない。");
             }
-
-        }
 
 
     }
@@ -55,6 +52,8 @@ public class Test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        
 
         int[] arrey = { 10, 20, 30, 40, 50};
 
@@ -81,6 +80,27 @@ public class Test : MonoBehaviour
         lastboss.Defence(3);
 
         lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
+        lastboss.Magic(5);
+
 
 
     }
